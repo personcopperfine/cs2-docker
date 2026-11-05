@@ -1,0 +1,9 @@
+# Build context is everything EXCEPT what the Dockerfile COPYs:
+# src/steam_settings/, entrypoint.sh, setup_gbe.sh.
+*
+!Dockerfile
+!src/
+!src/steam_settings/
+!src/steam_settings/*
+!entrypoint.sh
+!setup_gbe.sh
